@@ -1,0 +1,32 @@
+header{
+    background-color: rgb(31, 31, 138);
+}
+header ol{
+    list-style-type: none;
+}
+.header_inner{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main ol{
+    display: flex;
+}
+.main ol li a{
+    margin-right: 13px;
+    font-size: 16px;
+    color: white;
+}
+
+.auth ol{
+    display: flex;
+}
+.auth li button{
+    margin-left: 13px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
