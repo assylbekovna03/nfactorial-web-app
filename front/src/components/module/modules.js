@@ -19,4 +19,22 @@ const ModuleLogin = ({ children, open, isClose }) => {
     </div>
   );
 };
-export { ModuleLogin };
+
+const ModuleRegister = ({ children, open, isClose }) => {
+  if (!open) {
+    return null;
+  }
+  return (
+    <div class="module" id="becomeClientsModal">
+      <div class="module__inner">
+        <div class="module__content">
+          {children}{" "}
+          <button class="btn" onClick={isClose}>
+            <img src={close} alt="close" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+export { ModuleRegister, ModuleLogin };

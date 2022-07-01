@@ -4,6 +4,10 @@ input[type=text] {
 #univer{
     width:400px;
 }
+h1, p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /* .form-container {
     background-color: #ffffff;
     border: none;
@@ -38,6 +42,9 @@ input[type=text] {
     outline: none;
     background-color: #f8fcff;
     width: 100%;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .form-container input {
     border: 1px solid #dddfe2;
@@ -46,4 +53,12 @@ input[type=text] {
     outline: none;
     background-color: #f8fcff;
     width: 100%;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(31, 31, 138);
 }

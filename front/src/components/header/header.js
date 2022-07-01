@@ -2,11 +2,13 @@ import "../../App.css";
 import "../module/modules.css";
 import "./header.css";
 import Login from "../authorization/login";
-import { ModuleLogin } from "../module/modules";
+import Register from "../authorization/register";
+import { ModuleLogin, ModuleRegister } from "../module/modules";
 import { useState } from "react";
 
 const Header = () => {
   const [login, setLogin] = useState(false);
+  const [register, setRegister] = useState(false);
   return (
     <>
       <header>
@@ -30,7 +32,9 @@ const Header = () => {
                   </button>
                 </li>
                 <li>
-                  <button class="log">Регистрироваться</button>
+                  <button class="log" onClick={() => setRegister(true)}>
+                    Регистрироваться
+                  </button>
                 </li>
               </ol>
             </div>
@@ -40,6 +44,9 @@ const Header = () => {
       <ModuleLogin open={login} isClose={() => setLogin(false)}>
         <Login />
       </ModuleLogin>
+      <ModuleRegister open={register} isClose={() => setRegister(false)}>
+        <Register />
+      </ModuleRegister>
     </>
   );
 };
