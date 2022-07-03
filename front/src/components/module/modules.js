@@ -1,5 +1,5 @@
 import React from "react";
-import "../module/modules.css";
+import "../module/modules.scss";
 import close from "../assets/close.svg";
 
 const ModuleLogin = ({ children, open, isClose }) => {
@@ -11,7 +11,7 @@ const ModuleLogin = ({ children, open, isClose }) => {
       <div class="module__inner">
         <div class="module__content">
           {children}{" "}
-          <button class="btn" onClick={isClose}>
+          <button class="btn-close" onClick={isClose}>
             <img src={close} alt="close" />
           </button>
         </div>
@@ -29,7 +29,7 @@ const ModuleRegister = ({ children, open, isClose }) => {
       <div class="module__inner">
         <div class="module__content">
           {children}{" "}
-          <button class="btn" onClick={isClose}>
+          <button class="btn-close" onClick={isClose}>
             <img src={close} alt="close" />
           </button>
         </div>

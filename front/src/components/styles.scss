@@ -1,0 +1,26 @@
+@import "./header/header.scss";
+@import "./main/main.scss";
+@import "./module/modules.scss";
+@import "./authorization/login.scss";
+@import "./authorization/register.scss";
+
+
+.btn {
+    all: unset;
+    background-color: white;
+    // border: 1px solid grey;
+    color: black;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+.mr-1 {
+    margin-right: 8px;
+}
+
+.mr-2 {
+    margin-right: 20px;
+}
+.mb-1 {
+    margin-bottom: 8px;
+}

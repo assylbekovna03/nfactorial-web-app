@@ -1,4 +1,4 @@
-import "./main.css";
+import "./main.scss";
 import firstPhoto from "../assets/main.jpeg";
 const Main = () => {
   return (
